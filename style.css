@@ -3,44 +3,52 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
+  background-color: #f3efea;
+  color: #3a2e2a;
   line-height: 1.6;
 }
+
 header {
-  background-color: #2d98da;
+  background-color: #5c4033;
   color: white;
   text-align: center;
   padding-bottom: 0;
 }
+
 header .banner {
-  width: 100%;
+  width: 1920px;
   height: 500px;
   object-fit: cover;
+  display: block;
+  margin: 0 auto;
 }
+
 header h1 {
   margin: 0.5rem 0;
 }
+
 nav {
-  background-color: #61a522;
-  margin-top: 0.5rem;
+  background-color: #8b5e3c;
+  padding: 0.5rem 0;
 }
 nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
 }
 nav a:hover {
-  text-decoration: underline;
+  background: #5c4033;
+  transition: 0.3s;
 }
+
 .intro {
   text-align: center;
   margin: 2rem 0;
   padding: 0 1rem;
 }
+
 .members {
   display: flex;
   flex-wrap: wrap;
@@ -48,18 +56,23 @@ nav a:hover {
   gap: 20px;
   padding: 0 1rem 2rem;
 }
+
 .card {
-  background: white;
+  background: #fffdf9;
   width: 280px;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(92, 64, 51, 0.15);
   text-align: center;
-  transition: transform 0.2s;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
+
 .card:hover {
   transform: scale(1.05);
+  background: #f8f3ee;
+  box-shadow: 0 4px 12px rgba(92,64,51,0.25);
 }
+
 .card img {
   width: 120px;
   height: 120px;
@@ -67,27 +80,32 @@ nav a:hover {
   object-fit: cover;
   margin-bottom: 10px;
 }
+
 .btn {
   display: inline-block;
-  background: #2d98da;
+  background: #8b5e3c;
   color: white;
   padding: 8px 15px;
   margin-top: 10px;
   text-decoration: none;
   border-radius: 5px;
+  transition: background 0.3s;
 }
+
 .btn:hover {
-  background: #2274a5;
+  background: #5c4033;
 }
+
 .profile {
   max-width: 600px;
   margin: 2rem auto;
-  background: white;
+  background: #fffdf9;
   padding: 1.5rem;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(92, 64, 51, 0.1);
 }
+
 .profile-img {
   width: 150px;
   height: 150px;
@@ -95,13 +113,15 @@ nav a:hover {
   object-fit: cover;
   margin-bottom: 1rem;
 }
+
 footer {
   text-align: center;
-  background: #2d98da;
+  background: #5c4033;
   color: white;
   padding: 1rem;
   margin-top: 2rem;
 }
+
 @media (max-width: 768px) {
   .members {
     flex-direction: column;
